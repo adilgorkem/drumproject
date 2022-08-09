@@ -1,0 +1,116 @@
+/*General*/
+* {margin: 0;
+    padding: 0 ;
+box-sizing: border-box;}
+
+a{text-decoration: none;
+color: #fff;}
+
+html {font-family: "Open Sans", sans-serif;}
+
+/*Navbar Section*/
+#navbar {color: #fff;
+display: flex;
+justify-content: space-between/* = ul margin-left: auto */;
+align-items: center;
+padding: 0 0.75rem;/*top-bottom 0, right-left 0.75*root element (html) px padding*/
+height: 70px/*70px height doesn't have enough space. Solution: ul display flex*/;}
+
+#navbar ul {list-style-type: none;
+display: flex;/*Looks better but a links in ul need some padding*/
+align-items: center;}
+#navbar ul a {padding: 0.5rem;}
+#navbar ul a:hover
+{background: #336ea2;
+border-radius: 4px;}
+
+/*Home Section*/
+#home
+{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid gray;/*Line under section*/
+}
+
+/*Home image styling*/
+#home img {
+    max-width: 100%;
+    height: auto/*height will be adjusted to width automatically*/;
+    border-radius: 100%/*oval shape*/;
+}
+/*#home .name {text-align: center;}/*Home section'daki div2i seçtik ve textleri ortaladık.Bunu ikinci bir yöntem olarak index sayfasında div classını text-center yaparak hallettik*/
+
+#home .name h2 {margin-bottom:0.75rem ;}
+#home .name p {opacity: 0.6 ;
+font-style: italic;}
+/*#home a {margin-top: 1.25rem;
+background-color: #336ea2;
+padding: 0.8rem 3rem;
+border-radius: 8px;
+letter-spacing: 0.5px;}
+#home a:hover {color: #336ea2;
+background: white;
+border: #336ea2 solid 0.5px;
+} This part is done in global.css.*/
+
+/*Services*/
+#expertise {color: #fff;
+padding: 1rem;}
+#expertise .items {display: flex;
+justify-content: space-between;
+}
+#expertise .items .item {width: 33%;
+text-align: center;
+padding: 0.5rem;}/*It could be shortly selected as #expertise .item*/
+
+#expertise .items .item:hover {color: palegreen;
+}
+
+/*Publications*/
+#publications {color: #333;
+padding: 1rem;}
+.publications {display: flex; flex-direction: column; padding: 1rem;}
+.publications .washwatersludge {display: flex; padding: 0.5rem; margin-bottom: 0.5rem;}/*publication image and publication infos top and bottom*/
+.publications .washwatersludge .publication-image {margin-right: 0.5rem;position: relative;}
+.publications .washwatersludge .publication-image img {border-radius: 10px;}
+/*span'i divin üzerine yerleştireceğiz. Bu nedenle span'e absolute özelliği vermemiz gerek. Bu nedenle publication-image'a relative verdik.
+Div'in yeri değişse bile span de onunla hareket edecek.*/
+.publications .washwatersludge .publication-image span {background: blue; 
+    padding: 0.25rem; 
+    color: #fff; 
+    border-radius: 4px;
+position: absolute;
+top: 0px;
+left: 0px;}
+.publications .washwatersludge .publication-info .title {letter-spacing: 1.2px; 
+    font-weight: 700;
+margin-bottom: 0.25rem;}
+.publications .washwatersludge .publication-info .authors {letter-spacing: 1.2px;
+margin-bottom: 0.25rem;
+opacity: 0.9;}
+.publications .washwatersludge .publication-info .keywords {letter-spacing: 1.2px;
+margin-bottom: 0.25rem;
+opacity: 0.9;
+font-size: 0.8rem;
+font-style: italic;}
+
+/*Contacts*/
+#contact {color: #fff;
+padding: 1rem;}
+#contact .contact-form {max-width: 700px;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: column;}
+/*burada align-items: center ile aşağıda align-self ile yaptığımız ortalamayı yapamazdık çünkü ekranda 
+ortalamaya çalışırken item'lara verdiğimiz width'i yok edebiliyo. Ve itemler formlar vs. küçülüyo. ve biz yalnızca
+ul'nin ortalanmasını istediğimizden align-self kullanıyoruz.*/
+#contact .contact-form ul {list-style-type: none;
+display: flex;
+margin-top: 1rem;
+align-self: center;}
+#contact .contact-form ul li a {padding: 1rem;
+font-size: 2rem;}
+#contact .contact-form ul li a:hover {opacity: 0.8;}

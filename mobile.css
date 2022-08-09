@@ -1,0 +1,13 @@
+#navbar {flex-direction: column/*mobile boyutuna geçildiğinde ul'ler header'ın aşağısına geldi. bu sayede ekrana sığdırdık. normalde yanyana görünüyorlardı.*/;
+padding-top: 0.5rem/*yukarıdan boşluk bıraktık*/;
+padding-bottom: 0.5rem/*aşağıdan boşluk bıraktık*/;
+overflow: hidden/*Sorun: hover özelliği açıldığında yani linklerin üzerine geldiğimizde border özelliğinden dolayı navbar altında taşmalar meydana geliyor.
+Çözüm: overflow:hidden */;
+height: 90px;/*headerla olan üstten çakışmayı engelledik*/}
+
+#expertise .items {flex-direction: column;} /*mobilde services kısmı itemleri alt alta sıralanacak*/
+/*Ancak itemler içinde bulunduğu bloğun yalnızca 33%'ünü kapladığı için çok satırlı bir görüntü oluştu. Bunu engellemek için;*/
+#expertise .items .item {width: 100%;}
+
+.publications .washwater {
+flex-direction: column;} /*mobil ekranda publication image ve publication infolar alt alta gelmiş oldu*/

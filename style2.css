@@ -1,0 +1,88 @@
+#navbar {
+    margin-top: 10px;
+}
+
+html {background: black;}
+
+#container2 {
+    /* position: relative;
+    left: 15%; */
+    display: flex;
+    /* width: 10%;
+    height: 10%; */
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#section2 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    position: absolute;
+    top: 25%;
+}
+
+#image2 {
+    width: 100%;
+    height: 100%;
+}
+
+.buton {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid burlywood;
+    background-color: crimson;
+    padding: 10px;
+    opacity: 0;
+}
+.crash1 {
+    left: 35%;
+    top: 35%;
+}
+.crash2 {
+    left: 45%;
+    top: 30%;
+}
+.crash3 {
+    left: 58%;
+    top: 30%;
+}
+.ride {
+    left: 65%;
+    top: 35%;
+}
+.hihatclosed {
+    left: 27%;
+    top: 48%;
+}
+.hihatopen {
+    left: 35%;
+    top: 48%;
+}
+.china {
+    left: 67%;
+    top: 50%;
+}
+.tom1 {
+    left: 46%;
+    top: 42%;
+}
+.tom2 {
+    left: 55%;
+    top: 42%;
+}
+.tom3 {
+    left: 67%;
+    top: 63%;
+}
+.snare {
+    left: 49%;
+    top: 55%;
+}
+.kick {
+    left: 58%;
+    top: 63%;
+}

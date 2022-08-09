@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adil Görkem Gedik | Front End Developer</title>
+    <meta name="keywords" content="Concrete, Hydration, Sustainability ">
+    <meta name="description" content="Adil Görkem Gedik | Concrete Specialist">
+    <!--Font Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Fontların çalışması için css dosyasında font-family seçilmeli(main.css'e git)-->
+    <!--CSS'ler-->
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="tablet.css">
+    <!--768 px ekran boyutunda aktif olacak-->
+    <link rel="stylesheet" media="(max-width: 650px" href="mobile.css">
+    <!--500px ekran boyutunda aktif olacak-->
+    <!--global, main, tablet ve mobile için hazırlanacak olan css verilerini html dosyamıza ekledik-->
+</head>
+
+<body>
+    <!--<h1>Deneme</h1>-->
+    <!--<i class="fa fa-pencil-alt"></i>-->
+    <!--Önce HTML, sonra CSS tasarımı yapılmalı-->
+    <header class="bg-dark-blue">
+        <div class="container">
+            <!--class'ı container olan (main.css'e bak) div içerisine navbarı ekledik ve ul'leri ekranda biraz ortalamış olduk-->
+            <nav id="navbar">
+
+                <h1 class="text-center heading-small">Adil Görkem Gedik</h1>
+                <!--En önemli başlık h1-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#expertise">Services</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="/files/Gorkem Gedik CV.pdf" target="_blank">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <section id="home">
+        <img src="images/headshot.jpg" alt="Adil Görkem Gedik" width="200px">
+        <div class="name text-center">
+            <h2 class="heading-big">Adil Görkem Gedik</h2>
+            <p><b>Jr. Front End Developer</b> || Civil-Structural Engineer (M.Sc.) </p>
+        </div>
+        <a href="/files/Gorkem Gedik CV.pdf" class="btn btn-primary" target="_blank">Go into details</a>
+    </section>
+
+
+    <section id="expertise" class="bg-dark-blue">
+        <h3 class="text-center heading-medium">Services</h3>
+        <div class="items">
+            <article class="item">
+                <i class="fa-solid fa-person-running"></i>
+                <h3>Intentness</h3>
+                <hr>
+                <div class="justified-text">
+                    <p>I can describe myself as a well-educated candidate who always tries to give his best and works
+                        diligently.</p>
+                </div>
+
+            </article>
+            <article class="item">
+                <i class="fa-solid fa-user-shield"></i>
+                <h3>Reliability</h3>
+                <hr>
+                <ul class="justified-text" style="list-style-type:none;">
+                    <h4 style="text-decoration: underline;">The things I can ensure:</h4>
+                    <li>Consistently meeting deadlines</li>
+                    <li>Producing high-quality work</li>
+                    <li>Showing eagerness to take on more significant responsibilities</li>
+                    <li>Taking initiative when needed</li>
+                </ul>
+            </article>
+            <article class="item">
+                <i class="fa-solid fa-pen-ruler"></i>
+                <h3>Knowledge & Numeracy</h3>
+                <hr>
+                <div class="justified-text">
+                    <p>I deeply believe that I can meet the requirements and take the responsibilities of many vacancies considering my professional experience, studies on this field, English language skills
+                        and educational background.</p>
+                </div>
+            </article>
+            <article class="item">
+                <i class="fa-solid fa-people-carry-box"></i>
+                <h3>Teamwork Skills</h3>
+                <hr>
+                <div class="justified-text">
+                    <p>I always value group of people who come together to achieve the same objective and I think if
+                        there are a few ways to success the most important one must be having good team players.</p>
+                </div>
+            </article>
+            <article class="item">
+                <i class="fa-brands fa-leanpub"></i>
+                <h3>Eagerness to Learn</h3>
+                <hr>
+                <div class="justified-text">
+                    <p>I feel always hungry for learning new things and broadening my scope of skills.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+
+
+    <section id="publications">
+
+        <h3 class="text-center heading-medium">Publications</h3>
+        <!--Yine container içine alacağız ve geniş ekrana ortalayacağız.-->
+        <div class="container">
+            <div class="publications">
+                <div class="washwatersludge">
+                    <div class="publication-image" style="display:flex">
+                        <img style="width: 150px;" src="/images/ace.png" alt="ACE Congress">
+                        <button class="btn btn-primary btn2"
+                            style="position: absolute; left: 20%; top: -35%;"><a style="color: black;" href="/files/acepaper.pdf" target="_blank"> Download</a></button>
+                    </div>
+                    <div class="publication-info">
+                        <div class="title">Effects of Washwater Sludge Obtained From Ready-Mixed Concrete Plants on
+                            Hydration and Mechanical Properties of Mortar</div>
+                        <div class="authors">Adil Görkem Gedik, Ünal Anıl Doğan</div>
+                        <div class="keywords"> <span style="font-weight: 700;">keywords:</span>
+                            ready-mixed concrete, washwater sludge, sustainability, isothermal calorimeter, hydration
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer id="contact" class="bg-dark-blue">
+        <div class="contact-form">
+            
+                <h4 class="text-center heading-medium">Contact Me</h4>
+                
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/g%C3%B6rkem-gedik-3a1901a0/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/adilgorkem" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="mailto:ggorkemgedik@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i><div style="display:inline">ggorkemgedik@gmail.com</div></a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
